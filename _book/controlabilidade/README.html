@@ -1,0 +1,257 @@
+<!DOCTYPE HTML>
+<html lang="en-US" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <title>Controlabilidade | Métodos Matemáticos em controle</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 1.0.3">
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+        
+    
+    
+    
+    <link rel="next" href="../gramiano_de_controlabilidade/README.html" />
+    
+    
+    <link rel="prev" href="../index.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+<link rel="stylesheet" href="../gitbook/style.css">
+
+
+        
+    <div class="book"  data-level="1" data-basepath=".." data-revision="1413148340608">
+    
+
+<div class="book-summary">
+    <div class="book-search">
+        <input type="text" placeholder="Type to search" class="form-control" />
+    </div>
+    <ul class="summary">
+        
+    	
+    	
+    	
+
+        
+
+        
+    
+        
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="../index.html">
+                        <i class="fa fa-check"></i>
+                        
+                         Sistemas lineares
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter active" data-level="1" data-path="controlabilidade/README.html">
+            
+                
+                    <a href="../controlabilidade/README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                         Controlabilidade
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2" data-path="gramiano_de_controlabilidade/README.html">
+            
+                
+                    <a href="../gramiano_de_controlabilidade/README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                         Gramiano de Controlabilidade
+                    </a>
+                
+            
+            
+        </li>
+    
+
+
+        
+        <li class="divider"></li>
+        <li>
+            <a href="http://www.gitbook.io/" target="blank" class="gitbook-link">Published using GitBook</a>
+        </li>
+        
+    </ul>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header">
+    <!-- Actions Left -->
+    <a href="#" class="btn pull-left toggle-summary" aria-label="Toggle summary"><i class="fa fa-align-justify"></i></a>
+    <a href="#" class="btn pull-left toggle-search" aria-label="Toggle search"><i class="fa fa-search"></i></a>
+    
+    <div id="font-settings-wrapper" class="dropdown pull-left">
+        <a href="#" class="btn toggle-dropdown" aria-label="Toggle font settings"><i class="fa fa-font"></i>
+        </a>
+        <div class="dropdown-menu font-settings">
+    <div class="dropdown-caret">
+        <span class="caret-outer"></span>
+        <span class="caret-inner"></span>
+    </div>
+
+    <div class="buttons">
+        <button type="button" id="reduce-font-size" class="button size-2">A</button>
+        <button type="button" id="enlarge-font-size" class="button size-2">A</button>
+    </div>
+
+    <div class="buttons font-family-list">
+        <button type="button" data-font="0" class="button">Serif</button>
+        <button type="button" data-font="1" class="button">Sans</button>
+    </div>
+
+    <div class="buttons color-theme-list">
+        <button type="button" id="color-theme-preview-0" class="button size-3" data-theme="0">White</button>
+        <button type="button" id="color-theme-preview-1" class="button size-3" data-theme="1">Sepia</button>
+        <button type="button" id="color-theme-preview-2" class="button size-3" data-theme="2">Night</button>
+    </div>
+</div>
+
+    </div>
+
+    <!-- Actions Right -->
+    
+    <div class="dropdown pull-right">
+        <a href="#" class="btn toggle-dropdown" aria-label="Toggle share dropdown"><i class="fa fa-share-alt"></i>
+        </a>
+        <div class="dropdown-menu font-settings dropdown-left">
+            <div class="dropdown-caret">
+                <span class="caret-outer"></span>
+                <span class="caret-inner"></span>
+            </div>
+            <div class="buttons">
+                <button type="button" data-sharing="twitter" class="button">Twitter</button>
+                <button type="button" data-sharing="google-plus" class="button">Google</button>
+                <button type="button" data-sharing="facebook" class="button">Facebook</button>
+                <button type="button" data-sharing="weibo" class="button">Weibo</button>
+                <button type="button" data-sharing="instapaper" class="button">Instapaper</button>
+            </div>
+        </div>
+    </div>
+    
+
+    
+    <a href="#" target="_blank" class="btn pull-right google-plus-sharing-link sharing-link" data-sharing="google-plus" aria-label="Share on Google Plus"><i class="fa fa-google-plus"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right facebook-sharing-link sharing-link" data-sharing="facebook" aria-label="Share on Facebook"><i class="fa fa-facebook"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right twitter-sharing-link sharing-link" data-sharing="twitter" aria-label="Share on Twitter"><i class="fa fa-twitter"></i></a>
+    
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../" >Métodos Matemáticos em controle</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-gitbook_645">
+                    
+                        <h1 id="controlabilidade-de-sistemas-lineares">Controlabilidade de Sistemas Lineares</h1>
+<p>Consideremos duas matrizes <script type="math/tex">A \in \mathbb{M}_{n\times n}</script> e <script type="math/tex">B \in \mathbb{M}_{n\times m}</script>, que define um sistema de controle linear dado pela dinâmica</p>
+<script type="math/tex; mode=display">\dot{x}(t) = Ax(t) + Bu(t)</script><p>com <script type="math/tex">u(\cdot)</script> no espaço vetorial de funções <script type="math/tex">\mathcal{U} =\{ u:\mathbb{R} \to \mathbb{R}^m \}</script> localmente integráveis.
+A solução desse sistema que no instante <script type="math/tex">t_0</script> passa por <script type="math/tex">x_0</script> é:</p>
+<script type="math/tex; mode=display">\varphi(t,t_0,x_0,u(\cdot))= \text{e}^{(t-t_0)A}x_0 + \int_{t_0}^t\text{e}^{(t-s)A}Bu(s)ds</script><p>O conjunto</p>
+<script type="math/tex; mode=display">\mathcal{A}(t,t_0,x_0) = \{x\in \mathbb{R}^n: (\exists u(\cdot) \in \mathcal{U}) \wedge (x = \varphi(t,t_0,x_0,u(\cdot)))\}</script><p>Este conjunto chamaremos de <em>conjunto de controlabilidade</em>. Queremos condições sobre o par de matrizes <script type="math/tex">(A,B)</script> para que este conjunto seja todo espaço de estados <script type="math/tex">\mathbb{R}^n</script>, e neste caso diremos que o par <script type="math/tex">(A,B)</script>, ou o sistema seja controlável.</p>
+<h3 id="primeiras-observaes-sobre-mathcalatt_0x_0">Primeiras observações sobre <script type="math/tex">\mathcal{A}(t,t_0,x_0)</script></h3>
+<ul>
+<li><script type="math/tex; mode=display">\mathcal{A}(t,t_0,x_0) = \text{e}^{(t-t_0)A}x_0 + \{ \int_{t_0}^t\text{e}^{(t-s)A}Bu(s)ds : u(\cdot) \in \mathcal{U}\} = \text{e}^{(t-t_0)A}x_0 +\mathcal{A}(t,t_0,0).</script></li>
+<li><script type="math/tex; mode=display">\mathcal{A}(t,t_0,0)= \text{Im}\mathcal{L}.</script></li>
+<li><p>onde <script type="math/tex">\mathcal{L}</script> é o operador linear</p>
+<script type="math/tex; mode=display">\begin{gather}\mathcal{L}:\mathcal{U} \to \mathbb{R}^n \\
+\mathcal{L}(u(\cdot))=\int_{t_0}^t\text{e}^{(t-s)A}Bu(s)ds
+\end{gather}</script></li>
+<li><p>Assim o par <script type="math/tex">(A,B)</script> é controlável se, e somente se, <script type="math/tex">\text{Im}\mathcal{L}=\mathbb{R}^n</script></p>
+</li>
+</ul>
+<h3 id="exemplo">Exemplo:</h3>
+<p>Podemos reescrever a equação <script type="math/tex">\ddot{x}(t) = u(t)</script> como:</p>
+<script type="math/tex; mode=display">\begin{pmatrix}\dot{x} \\ \dot{y} \end{pmatrix}=\begin{pmatrix}0 & 1 \\ 0 & 0 \end{pmatrix}\begin{pmatrix} x \\ y \end{pmatrix} + \begin{pmatrix} 0 \\ 1 \end{pmatrix} u(t)</script><p>Pode-se verificar facilmente que</p>
+<script type="math/tex; mode=display">\text{e}^{(t-t_0)A} = \begin{pmatrix} 1 & t-t_0 \\ 0 & 1\end{pmatrix} \text{ e } \mathcal{L}(u) = \begin{pmatrix} \int_{t_0}^t(t-s)u(s) ds \\ \int_{t_0}^t u(s) ds \end{pmatrix}</script><p>Dado um ponto <script type="math/tex">(x_0,y_0)</script> qualquer de <script type="math/tex">\mathbb{R}^n</script> e tomando um controle da forma $u(t) =at + b$, então podemos resolver o sistema:</p>
+<script type="math/tex; mode=display">\begin{eqnarray}
+a \int_{t_0}^t (t-s)sds + b \int_{t_0}^t(t-s)ds & = & x_0 \\
+a \int_{t_0}^ts ds  + b \int_{t_0}^t ds&=& y_0
+\end{eqnarray}</script><p>para mostrar que este par de matrizes é controlável.</p>
+<h4 id="exerccio">Exercício:</h4>
+<p>verifique que o par de matrizes <script type="math/tex">(A,B)</script> com:</p>
+<script type="math/tex; mode=display">A = \begin{pmatrix} 0 & 1 \\ 0 & 0 \end{pmatrix} \text{ e } B= \begin{pmatrix} 1 \\ 0 \end{pmatrix}</script><p>não é controlável.</p>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../index.html" class="navigation navigation-prev " aria-label="Previous page: Sistemas lineares"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="../gramiano_de_controlabilidade/README.html" class="navigation navigation-next " aria-label="Next page: Gramiano de Controlabilidade"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="../gitbook/app.js"></script>
+
+    
+    <script src="https://cdn.mathjax.org/mathjax/2.4-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-mathjax/plugin.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"fontSettings":{"theme":null,"family":"sans","size":2}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>
