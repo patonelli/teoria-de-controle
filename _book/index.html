@@ -31,7 +31,7 @@
 
 
         
-    <div class="book"  data-level="0" data-basepath="." data-revision="1413148340608">
+    <div class="book"  data-level="0" data-basepath="." data-revision="1413253116184">
     
 
 <div class="book-summary">
@@ -183,7 +183,7 @@
                 <div class="page-inner">
                 
                 
-                    <section class="normal" id="section-gitbook_644">
+                    <section class="normal" id="section-gitbook_189">
                     
                         <h1 id="mtodos-matemticos-em-controle">Métodos Matemáticos em controle</h1>
 <p>Em praticamente todos os sistemas da natureza há a possibilidade de intervenção que permite exercer algum controle sobre o sistema. Aspectos tecnológicos nos fazem procurar uma forma de exercer este controle automaticamente. É o que chamaremos de retroalimentação do sistema.</p>
@@ -200,6 +200,11 @@ Isso foi mais ou menos em 1930. Depois da segunda guerra mundial os métodos de 
 e <script type="math/tex">u_{\theta}</script> respectivamente. A equação dinâmica deste sistema é dada pela segunda lei de Newton:</p>
 <script type="math/tex; mode=display">m\ddot{\mathbf{r} }=(-\frac{k}{r^2}+u_r)\mathbf{e}_r + u_{\theta} \mathbf{e}_{\theta}</script><p>fazendo a massa <script type="math/tex">m=1</script> para que eu não tenha que ficar digitando coisas a mais. Podemos reecrever as equações em coordenadas polares como:</p>
 <script type="math/tex; mode=display">\ddot{r} = r\dot{\theta}^2-\frac{k}{r^2}+u_r</script><script type="math/tex; mode=display">r\ddot{\theta}= -2\dot{r}\dot{\theta} + u_{\theta}</script><p>Estas duas equações nos dão um sistema de controle não linear com duas entradas de controle. Voltaremos a este exemplo quando falarmos de linearização.</p>
+<h4 id="pndulo-invertido">Pêndulo invertido</h4>
+<p><img src="http://wiki.stoa.usp.br/images/b/b6/Cart-pendulum.png" alt="Pêndulo Invertido"></p>
+<p>O <a href="http://en.wikipedia.org/wiki/Inverted_pendulum" target="_blank">Pêndulo invertido</a> é um problema clássico em teoria de controle, as equações do movimento são:</p>
+<script type="math/tex; mode=display">
+\left ( M + m \right ) \ddot x - m l \ddot \theta \cos \theta + m l \dot \theta^2 \sin \theta = F</script><script type="math/tex; mode=display">m l (-g \sin \theta - \ddot x \cos \theta + l \ddot \theta) = 0</script><p>A variável de controle aqui é a força <script type="math/tex">F</script></p>
 
                     
                     </section>
